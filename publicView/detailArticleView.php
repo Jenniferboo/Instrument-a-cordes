@@ -16,23 +16,28 @@
     <section>
      
         <article>
-            <h1><?=$item->title?></h1>
-            <h1></h1>
-            <p></p>
+            <h1><?=$detailInstrument->title?></h1>
+            <p><?=$detailInstrument->intro?></p>
         </article>
         
         <article>
-            <h1></h1>
-            <p></p>
+            <p><?=$detailInstrument->description?></p>
         </article>
         
         <article>
-            <h1></h1>
-            <p></p>
+            <p><?=$detailInstrument->technics?></p>
         </article>
+
         <article>
-            <h1></h1>
-            <p></p>
+            <p><?=$detailInstrument->history?></p>
+        </article>
+    
+        <article>
+            <p><?=$detailInstrument->sound?></p>
+        </article>
+    
+        <article>
+            <p><?=$detailInstrument->picture?></p>
         </article>
     
     </section>
