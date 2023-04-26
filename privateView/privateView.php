@@ -31,8 +31,14 @@
         <input type="checkbox" placeholder="new">
         <button type="submit">new instru</button>
 
-    </form>
+    </form> 
+    <?php
+        
+        if (isset($fetchDetailInstrument)):
+          foreach ($fetchDetailInstrument as $item):
+      ?>
     <table>
+   
         <tr>
             <th>type</th>
             <th>contenue</th>
@@ -44,11 +50,15 @@
                 <p><?=$dataInstrumentPrivate = fetchInstrumentHome($dbConnect);?></p>
             </td>
             <td>
-                <p><?= ?></p>
+                <p><?=$dataAuteurPrivate = fetch ?></p>
             </td>
             <td><input type="submit"></td>
         </tr>
     </table>
+    <?php
+                endforeach;
+            endif;
+        ?>
 
 
 
@@ -56,6 +66,7 @@
         <?php
         include_once "../publicView/src/footer.php"
         ?>
-    </footer>
+    </footer>4
+
 </body>
 </html>
