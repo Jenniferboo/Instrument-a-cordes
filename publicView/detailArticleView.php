@@ -51,7 +51,7 @@
     <footer>
         <?php include_once "src/footer.php"?>
     </footer>
-    
+    <script src="../public/css/detail.js"></script>
 </body>
 </html>
 
